@@ -1,0 +1,33 @@
+{
+  "name": "jquery.wbDirections",
+  "title": "wbDirections",
+  "description": "Whiteboard's solution for dropping in jQuery-based Google Maps with directions",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonathancutrell/jquery.wbDirections",
+  "author": {
+    "name": "Jonathan Cutrell",
+    "email": "jonathan@whiteboard.is",
+    "url": "http://whiteboard.is"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonathancutrell/jquery.wbDirections.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonathancutrell/jquery.wbDirections/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonathancutrell/jquery.wbDirections/blob/master/LICENSE-MIT"
+    },
+    {
+      "type": "GPL",
+      "url": "https://github.com/jonathancutrell/jquery.wbDirections/blob/master/LICENSE-GPL"
+    }
+  ],
+  "dependencies": {
+    "jquery": "1.7"
+  },
+  "keywords": []
+}
