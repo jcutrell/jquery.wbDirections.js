@@ -18,6 +18,9 @@
     <!-- Mobile viewport optimized: h5bp.com/viewport -->
     <meta name="viewport" content="width=device-width">
     <style>
+    body {
+        font-family: sans-serif;
+    }
         #directions {
             width: 500px;
             height: 300px;
@@ -40,6 +43,7 @@
     <!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
     <!-- Add your site or application content here -->
+    <h1>Get Directions Simple Example</h1>
     <form id='get_directions'>
       <input name="to" type="hidden" value="1016 Howell Mill Road, Atlanta, GA, 30318">
       <input name="from" value="Albuquerque, NM">
@@ -47,6 +51,24 @@
     </form>
 
     <div id="directions"></div>
+    <hr />
+    <h2>The code to do it:</h2>
+    <textarea>
+        (function(){
+      $('#get_directions').on("submit", function(e){
+            var f = $(this);
+            e.preventDefault();
+            $("#directions").wbDirections({
+              from : f.find("input[name=from]").val(),
+              to : f.find("input[name=to]").val()
+            });
+            $("#directions").on("loaded.wbDirections", function(){
+                $("#directions").animate({opacity:1});
+            });
+            return false;
+          });
+    })();
+    </textarea>
 
     <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
 
