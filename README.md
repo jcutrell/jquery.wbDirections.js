@@ -37,3 +37,8 @@ _(Nothing yet)_
 ## License
 Copyright (c) 2012 Jonathan Cutrell  
 Licensed under the MIT, GPL licenses.
+=======
+jquery.wbDirections.js
+======================
+
+Whiteboard's solution for dropping in jQuery-based Google Maps with directions
