@@ -14,8 +14,20 @@ In your web page:
 <script src="jquery.js"></script>
 <script src="dist/jquery.wbDirections.min.js"></script>
 <script>
-jQuery(function($) {
-  $.awesome(); // "awesome"
+$(document).ready(function(){
+  $('#get_directions').on("submit", function(e){
+	   var f = $(this);
+	   e.preventDefault();
+	   $("#directions").wbDirections({
+	     from : f.find("input[name=from]").val(),
+	     to : f.find("input[name=to]").val()
+	   });
+	   $("#directions").on("loaded.wbDirections", function(){
+	   		// do stuff in your callback, like show your directions
+	       $("#directions").css({opacity:1})
+	   });
+	   return false;
+	 });
 });
 </script>
 ```
