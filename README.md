@@ -42,12 +42,12 @@ The following are the default options available:
         directionsListId : "wbDirections_list"+ i
         cb : function(response){}
 
--"From" is the address you are coming from. This will probably be pulled from a field in a form.
--"To" is the address you are going to. This can be hard-coded or pulled from a field as well (we probably will use input[type=hidden] for this.)
--trgtId (target ID) is set to be the ID of the element that wbDirections is called on. If the element doesn't have an ID, one will be given to it. If you pass a separate ID to the element, it will target that ID. If that ID doesn't exist, it will append a div with that ID to the body.
--mapId is the ID of the actual map. If it doesn't exist, it will be appended to the target ID element.
--directionsListId is the ID of the directions list containing element. If it doesn't exist, it will also be appended to the target element after the map.
--cb is a callback function that fires after the map and directions have been appended to the target element.
+- "From" is the address you are coming from. This will probably be pulled from a field in a form.
+- "To" is the address you are going to. This can be hard-coded or pulled from a field as well (we probably will use input[type=hidden] for this.)
+- trgtId (target ID) is set to be the ID of the element that wbDirections is called on. If the element doesn't have an ID, one will be given to it. If you pass a separate ID to the element, it will target that ID. If that ID doesn't exist, it will append a div with that ID to the body.
+- mapId is the ID of the actual map. If it doesn't exist, it will be appended to the target ID element.
+- directionsListId is the ID of the directions list containing element. If it doesn't exist, it will also be appended to the target element after the map.
+- cb is a callback function that fires after the map and directions have been appended to the target element.
 
 ## A Note about the loaded.wbDirections and loading.wbDirections events
 
