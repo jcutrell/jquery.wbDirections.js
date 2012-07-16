@@ -3,7 +3,7 @@
 Whiteboard's solution for dropping in jQuery-based Google Maps with directions
 
 ## Getting Started
-Download the [production version][min] or the [development version][max].
+Download the [development version][max].
 
 [min]: https://raw.github.com/jonathancutrell/jquery.wbDirections/master/dist/jquery.wbDirections.min.js
 [max]: https://raw.github.com/jonathancutrell/jquery.wbDirections/master/dist/jquery.wbDirections.js
